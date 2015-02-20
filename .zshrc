@@ -64,6 +64,7 @@ fi
 # http://stackoverflow.com/a/23259585/1895366
 export ZSHRC=${(%):-%N}
 export DOTFILES=$(dirname $(readlink -f $ZSHRC))
+export EMACSD="~/Code/emacs.d"
 
 # Aliases
 alias cl="clear"
