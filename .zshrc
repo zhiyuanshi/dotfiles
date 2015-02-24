@@ -99,12 +99,6 @@ alias find-my-ip="ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\
 alias upgrade-system="sudo apt-get update && sudo apt-get -y dist-upgrade"
 
 # Functions
-
-# Monkey-patch evince
-evince() {
-  evince $1 2> /dev/null &
-}
-
 disable-post-installation-script() {
   sudo mv "/var/lib/dpkg/info/$1.postinst" "/var/lib/dpkg/info/$1.postinst.original"
 }
