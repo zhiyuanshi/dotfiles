@@ -151,4 +151,4 @@ export PATH=~/.cabal/bin:$PATH
 export PATH=$PATH:~/Applications/activator-1.2.12-minimal
 
 # IntelliJ IDEA
-export PATH=$PATH:~/Applications/idea-IU-139.1117.1/bin
+export PATH=$PATH:~/Applications/idea-IU-141.177.4/bin
