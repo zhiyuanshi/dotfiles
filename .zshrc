@@ -146,9 +146,8 @@ eval "$(rbenv init -)"
 # cabal
 export PATH=~/.cabal/bin:$PATH
 
-# Activator for the Play Framework
-# https://www.playframework.com/documentation/2.3.x/Installing
-export PATH=$PATH:~/Applications/activator-1.2.12-minimal
+# Typesafe Activator
+export PATH=$PATH:~/Applications/activator-1.3.2-minimal
 
 # IntelliJ IDEA
 export PATH=$PATH:~/Applications/idea-IU-141.178.9/bin
