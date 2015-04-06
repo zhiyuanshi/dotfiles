@@ -148,6 +148,7 @@ export PATH=~/.cabal/bin:$PATH
 
 # Typesafe Activator
 export PATH=$PATH:~/Applications/activator-1.3.2-minimal
+alias act=activator
 
 # IntelliJ IDEA
 export PATH=$PATH:~/Applications/idea-IU-141.178.9/bin
