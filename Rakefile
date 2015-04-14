@@ -9,6 +9,7 @@ RULES = {
   ".irbrc" => "~",
   ".gemrc" => "~",
   ".railsrc" => "~",
+  ".chktexrc" => "~"
 }
 
 desc "Setup dotfiles by creating symlinks"
