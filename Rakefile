@@ -1,8 +1,18 @@
+def sublime_text_data_folder_path(os = :os_x)
+  case os
+  # Paths to data folder are documented at https://www.sublimetext.com/docs/3/revert.html
+  when :os_x
+    "~/Library/Application Support/Sublime Text 3"
+  when :linux
+    "~/.config/sublime-text-3"
+  end
+end
+
 RULES = {
   ".zshrc" => "~",
   ".vimrc" => "~",
-  ".emacs" => "~",
-  "Preferences.sublime-settings" => "~/.config/sublime-text-3/Packages/User",
+  # ".emacs" => "~",
+  "Preferences.sublime-settings" => "#{sublime_text_data_folder_path}/Packages/User",
   ".gitconfig" => "~",
   ".hgrc" => "~",
   ".ghci" => "~",
@@ -18,14 +28,14 @@ task :up do
   # /bin/dash on Ubuntu by default. Ugh!
   #
   # http://stackoverflow.com/questions/1239510/how-do-i-specify-the-shell-to-use-for-a-ruby-system-call
-  system("sudo ln -s --force $(which bash) /bin/sh")
+  # system("sudo ln -s --force $(which bash) /bin/sh")
 
   dotfiles_dir = File.expand_path(File.dirname(__FILE__))
 
   RULES.each do |f, target_dir|
     local_path  = File.join(dotfiles_dir, f)
     remote_path = File.join(File.expand_path(target_dir), f)
-    system("ln -s --force #{local_path} #{remote_path}")
+    system("ln -s -f '#{local_path}' '#{remote_path}'")
 
     # Handle ".ghci is writable by someone else, IGNORING!"
     system("chmod g-w #{File.expand_path('~/.ghci')}")

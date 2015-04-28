@@ -31,7 +31,7 @@ source $ZSH/oh-my-zsh.sh        # Required
 # User configuration
 # Set prompt
 # PROMPT="
-# %c%# "
+# %c ⇾%# "
 
 # Tasks on Zsh start-up
 # Clear "Recently Used"
@@ -63,12 +63,12 @@ fi
 # Shortcuts to directories
 # http://stackoverflow.com/a/23259585/1895366
 export ZSHRC=${(%):-%N}
-export DOTFILES=$(dirname $(readlink -f $ZSHRC))
-export EMACSD="~/Code/emacs.d"
+export DOTFILES=$(dirname $(readlink $ZSHRC))
+export EMACSD="~/Projects/emacs.d"
 
 # Aliases
 alias cl="clear"
-alias open="xdg-open"
+# alias open="xdg-open" # Ubuntu
 
 alias v="gvim 2> /dev/null"
 alias e="$EMACSCLIENT"
@@ -136,19 +136,25 @@ function defined { command -v $1 &>/dev/null }
 function require { source "$DOTFILES/$1.sh" }
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export PATH="~/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # fzf, depends on Ruby
 # A general-purpose fuzzy finder for your shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# cabal
-export PATH=~/.cabal/bin:$PATH
+# Cabal
+export PATH="~/.cabal/bin:$PATH" # Ubuntu
+export PATH="~/Library/Haskell/bin:$PATH" # OS X
 
 # Typesafe Activator
-export PATH=$PATH:~/Applications/activator-1.3.2-minimal
+export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
 alias act=activator
 
+# MacTeX
+# Sample Q&A for this issue:
+# http://tex.stackexchange.com/questions/163849/mavericks-upgrade-screwed-up-my-pdflatex-command-not-found
+export PATH="/usr/texbin:$PATH" # OS X
+
 # IntelliJ IDEA
-export PATH=$PATH:~/Applications/idea-IU-141.178.9/bin
+export PATH="~/Applications/idea-IU-141.178.9/bin:$PATH"
