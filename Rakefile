@@ -16,6 +16,7 @@ RULES = {
   ".gitconfig" => "~",
   ".hgrc" => "~",
   ".ghci" => "~",
+  ".ocamlinit" => "~",
   ".irbrc" => "~",
   ".gemrc" => "~",
   ".railsrc" => "~",
