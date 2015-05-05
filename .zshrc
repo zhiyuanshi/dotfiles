@@ -144,9 +144,16 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # A general-purpose fuzzy finder for your shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Cabal
-export PATH="~/.cabal/bin:$PATH" # Ubuntu
-export PATH="~/Library/Haskell/bin:$PATH" # OS X
+# Haskell Platform
+# export PATH="~/.cabal/bin:$PATH" # Ubuntu
+# export PATH="~/Library/Haskell/bin:$PATH" # OS X
+
+# Haskell for Mac OS X
+# Add GHC 7.8.4 to the PATH, via https://ghcformacosx.github.io/
+export GHC_DOT_APP="/Applications/ghc-7.8.4.app"
+if [ -d "$GHC_DOT_APP" ]; then
+  export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+fi
 
 # Typesafe Activator
 export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
