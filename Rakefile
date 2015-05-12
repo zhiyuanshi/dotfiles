@@ -20,7 +20,10 @@ RULES = {
   ".irbrc" => "~",
   ".gemrc" => "~",
   ".railsrc" => "~",
-  ".chktexrc" => "~"
+  ".chktexrc" => "~",
+
+  # http://stackoverflow.com/questions/7899845/emacs-synctex-skim-how-to-correctly-set-up-syncronization-none-of-the-exi
+  ".latexmkrc" => "~"
 }
 
 desc "Setup dotfiles by creating symlinks"
