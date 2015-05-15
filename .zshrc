@@ -126,6 +126,10 @@ nginx-load-conf-and-restart() {
 # Defined in =/etc/environment=
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
+# MacPorts
+# https://guide.macports.org/#installing.shell
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
 # OPAM
 if which opam &>/dev/null ; then
   export PATH="~/.opam/4.01.0/bin:$PATH"
