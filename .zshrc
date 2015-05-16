@@ -163,9 +163,10 @@ fi
 export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
 alias act=activator
 
-# npm, with permissions fixed!
+# Node.js & npm, with permissions fixed!
 # https://docs.npmjs.com/getting-started/fixing-npm-permissions
-export PATH="~/.npm-global/bin:$PATH"
+export PATH=~/.npm-global/bin:$PATH
+export NODE_PATH=$NODE_PATH:~/.npm-global/lib/node_modules  # According to Yeoman Doctor
 
 # MacTeX
 # Sample Q&A for this issue:
