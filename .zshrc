@@ -163,6 +163,10 @@ fi
 export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
 alias act=activator
 
+# npm, with permissions fixed!
+# https://docs.npmjs.com/getting-started/fixing-npm-permissions
+export PATH="~/.npm-global/bin:$PATH"
+
 # MacTeX
 # Sample Q&A for this issue:
 # http://tex.stackexchange.com/questions/163849/mavericks-upgrade-screwed-up-my-pdflatex-command-not-found
