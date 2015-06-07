@@ -160,7 +160,8 @@ if [ -d "$GHC_DOT_APP" ]; then
 fi
 
 # Typesafe Activator
-export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
+# export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
+export PATH=~/.activator-1.3.2-minimal:$PATH
 alias act=activator
 
 # Node.js & npm, with permissions fixed!
