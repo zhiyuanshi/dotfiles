@@ -175,3 +175,7 @@ export PATH="/usr/texbin:$PATH" # OS X
 
 # IntelliJ IDEA
 export PATH="~/Applications/idea-IU-141.178.9/bin:$PATH"
+
+# Postgres.app
+# http://postgresapp.com/
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
