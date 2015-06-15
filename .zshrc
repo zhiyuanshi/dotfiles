@@ -178,5 +178,5 @@ export PATH="/usr/texbin:$PATH" # OS X
 export PATH="~/Applications/idea-IU-141.178.9/bin:$PATH"
 
 # Postgres.app
-# http://postgresapp.com/
+# http://postgresapp.com/documentation/cli-tools.html
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
