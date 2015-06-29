@@ -42,8 +42,8 @@ task :up do
     system("ln -s -f '#{local_path}' '#{remote_path}'")
 
     # Handle ".ghci is writable by someone else, IGNORING!"
-    system("chmod g-w #{File.expand_path('~/.ghci')}")
-    system("chmod g-w #{dotfiles_dir}")
+    system("chmod g-w '#{File.expand_path('~/.ghci')}'")
+    system("chmod g-w '#{dotfiles_dir}'")
 
     # if [[ -n $SSH_CONNECTION ]]; then
     #   export EDITOR="vim"
@@ -52,7 +52,7 @@ task :up do
     # fi
 
     # Reverse copy my public SSH key
-    system("cp ~/.ssh/id_rsa.pub #{dotfiles_dir}")
+    system("cp ~/.ssh/id_rsa.pub '#{dotfiles_dir}'")
   end
 end
 
