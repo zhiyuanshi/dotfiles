@@ -21,6 +21,7 @@ RULES = {
   ".gemrc" => "~",
   ".railsrc" => "~",
   ".chktexrc" => "~",
+  ".pgclirc" => "~",
 
   # http://stackoverflow.com/questions/7899845/emacs-synctex-skim-how-to-correctly-set-up-syncronization-none-of-the-exi
   ".latexmkrc" => "~"
