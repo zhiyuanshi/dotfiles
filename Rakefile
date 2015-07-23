@@ -19,6 +19,7 @@ RULES = {
   ".ocamlinit" => "~",
   ".irbrc" => "~",
   ".gemrc" => "~",
+  ".rubocop.yml" => "~",
   ".railsrc" => "~",
   ".chktexrc" => "~",
   ".pgclirc" => "~",
