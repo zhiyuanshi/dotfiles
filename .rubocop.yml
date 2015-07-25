@@ -1,6 +1,12 @@
 Metrics/LineLength:
   Max: 99
 
+Style/AsciiComments:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
 Style/HashSyntax:
   Enabled: false
 
@@ -10,10 +16,16 @@ Style/NegatedIf:
 Style/NumericLiterals:
   Enabled: false
 
+Style/RaiseArgs:
+  Enabled: false
+
 Style/RedundantSelf:
   Enabled: false
 
 Style/SignalException:
+  Enabled: false
+
+Style/SingleLineBlockParams:
   Enabled: false
 
 Style/SpaceAroundOperators:
