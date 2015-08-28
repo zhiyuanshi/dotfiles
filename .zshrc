@@ -160,6 +160,10 @@ if [ -d "$GHC_DOT_APP" ]; then
   export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
 fi
 
+# Stack
+# https://github.com/commercialhaskell/stack
+export PATH=~/.stack/bin:$PATH
+
 # Typesafe Activator
 # export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
 export PATH=~/.activator-1.3.2-minimal:$PATH
