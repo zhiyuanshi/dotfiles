@@ -177,7 +177,7 @@ export NODE_PATH=$NODE_PATH:~/.npm-global/lib/node_modules  # According to Yeoma
 # MacTeX
 # Sample Q&A for this issue:
 # http://tex.stackexchange.com/questions/163849/mavericks-upgrade-screwed-up-my-pdflatex-command-not-found
-export PATH="/usr/texbin:$PATH" # OS X
+export PATH="/Library/TeX/texbin:$PATH" # OS X
 
 # IntelliJ IDEA
 export PATH="~/Applications/idea-IU-141.178.9/bin:$PATH"
