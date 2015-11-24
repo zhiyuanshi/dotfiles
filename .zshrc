@@ -164,6 +164,9 @@ fi
 # https://github.com/commercialhaskell/stack
 export PATH=~/.stack/bin:$PATH
 
+# Coq, downloaded OS X app from https://coq.inria.fr/coq-85
+export PATH=/Applications/CoqIDE_8.5beta3.app/Contents/Resources/bin:$PATH
+
 # Typesafe Activator
 # export PATH="~/Applications/activator-1.3.2-minimal:$PATH"
 export PATH=~/.activator-1.3.2-minimal:$PATH
