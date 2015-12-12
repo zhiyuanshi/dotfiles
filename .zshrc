@@ -75,6 +75,7 @@ alias e="$EMACSCLIENT"
 alias s="subl"
 alias a="atom"
 alias nb="ipython notebook"
+alias mk="make"
 
 # Running Java with one command
 # Something similar to =runhaskell=, why didn't we have one?
