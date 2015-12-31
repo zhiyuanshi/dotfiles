@@ -142,6 +142,9 @@ fi
 function defined { command -v $1 &>/dev/null }
 function require { source "$DOTFILES/$1.sh" }
 
+# Anaconda (Python)
+export PATH=~/anaconda3/bin:$PATH
+
 # rbenv
 export PATH="~/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
