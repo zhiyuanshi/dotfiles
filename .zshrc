@@ -161,9 +161,10 @@ if [ -d "$GHC_DOT_APP" ]; then
   export PATH="${GHC_DOT_APP}/Contents/bin:${PATH}"
 fi
 
-# Stack
+# Stack (Haskell)
 # https://github.com/commercialhaskell/stack
-export PATH=~/.stack/bin:$PATH
+export PATH=~/.stack/bin:$PATH  # system installed stack
+export PATH=~/.local/bin:$PATH  # Upgraded stack goes here
 
 # Coq, downloaded OS X app from https://coq.inria.fr/coq-85
 export PATH=/Applications/CoqIDE_8.5beta3.app/Contents/Resources/bin:$PATH
