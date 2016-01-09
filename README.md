@@ -23,6 +23,9 @@ cd dotfiles
 rake up
 ```
 
+The last command will create symlinks. Therefore, if the path to this directory
+is changed, you need to run `rake up` again.
+
 You can safely run `rake up` multiple times to update:
 
 ```
