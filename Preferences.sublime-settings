@@ -1,6 +1,12 @@
 {
+	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
 	"color_scheme": "Packages/Color Scheme - Default/Slush & Poppies.tmTheme",
 	"font_face": "Ubuntu Mono",
-	"font_size": 14,
+	"font_size": 18,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
