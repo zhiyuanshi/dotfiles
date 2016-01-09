@@ -77,6 +77,10 @@ alias a="atom"
 alias nb="ipython notebook"
 alias mk="make"
 
+# http://sourabhbajaj.com/mac-setup/iTerm/zsh.html
+function f() { find . -iname "*$1*" ${@:2} }
+function mkcd() { mkdir -p "$@" && cd "$_"; }
+
 # Running Java with one command
 # Something similar to =runhaskell=, why didn't we have one?
 # Extracted from the following Japanese blog post:
