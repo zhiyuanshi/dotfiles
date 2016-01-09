@@ -142,15 +142,8 @@ fi
 function defined { command -v $1 &>/dev/null }
 function require { source "$DOTFILES/$1.sh" }
 
-# Python
-
-# Anaconda
+# Anaconda (Python)
 export PATH=~/anaconda3/bin:$PATH
-
-# ptpython
-if which ptpython &>/dev/null ; then
-  alias python=ptpython
-fi
 
 # rbenv
 export PATH="~/.rbenv/bin:$PATH"
