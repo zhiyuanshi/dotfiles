@@ -11,6 +11,7 @@ end
 RULES = {
   ".zshrc" => "~",
   ".vimrc" => "~",
+  ".spacemacs" => "~",
   # ".emacs" => "~",
   "Preferences.sublime-settings" => "#{sublime_text_data_folder_path}/Packages/User",
   ".gitconfig" => "~",
