@@ -28,6 +28,7 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t)
      ;; better-defaults
+     c-c++
      emacs-lisp
      ess
      ;; git
