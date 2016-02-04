@@ -28,7 +28,8 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-sort-by-usage t)
      ;; better-defaults
-     c-c++
+     (c-c++ :variables
+            c-c++-default-mode-for-headers 'c++-mode)
      emacs-lisp
      ess
      ;; git
