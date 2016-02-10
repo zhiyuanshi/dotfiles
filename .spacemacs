@@ -32,7 +32,7 @@ values."
             c-c++-default-mode-for-headers 'c++-mode)
      emacs-lisp
      ess
-     ;; git
+     git
      ;; markdown
      ;; org
      python
