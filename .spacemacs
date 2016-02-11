@@ -41,6 +41,7 @@ values."
      ;;        shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
+     themes-megapack
      version-control
      )
    ;; List of additional packages that will be installed without being
