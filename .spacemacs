@@ -33,7 +33,7 @@ values."
      emacs-lisp
      ess
      git
-     ;; markdown
+     markdown
      ;; org
      python
      ;; (shell :variables
