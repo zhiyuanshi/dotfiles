@@ -34,7 +34,7 @@ values."
      ess
      git
      markdown
-     ;; org
+     org
      python
      ;; (shell :variables
      ;;        shell-default-height 30
