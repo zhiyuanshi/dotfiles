@@ -256,10 +256,8 @@ This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (global-company-mode)
   (spacemacs/toggle-smartparens-globally-on)
-  ;; Turn off the automatic replacement of underscores by <-
-  (add-hook 'ess-mode-hook
-            (lambda ()
-              (ess-toggle-underscore nil)))
+  ;; A single `;' in ESS mode enters a `<-', and a double `;' a usual `;'.
+  (setq ess-smart-S-assign-key ";")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
