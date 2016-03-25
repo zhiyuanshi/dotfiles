@@ -34,7 +34,7 @@ values."
      ess
      git
      markdown
-     org
+     ;; org
      python
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -103,7 +103,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(colorsarenice-light
+   dotspacemacs-themes '(moe-light
+                         colorsarenice-light
                          sanityinc-solarized-light
                          spacemacs-light
                          spacemacs-dark
