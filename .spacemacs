@@ -30,6 +30,9 @@ values."
      ;; better-defaults
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode)
+     (colors :variables
+             colors-enable-rainbow-identifiers t
+             colors-enable-nyan-cat-progress-bar t)
      emacs-lisp
      ess
      git
@@ -112,10 +115,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(leuven
-                         colorsarenice-light
+   dotspacemacs-themes '(spacemacs-light
                          spacemacs-dark
-                         spacemacs-light
                          solarized-light
                          solarized-dark
                          leuven
