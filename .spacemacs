@@ -30,6 +30,8 @@ values."
      ;; better-defaults
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode)
+     (clojure :variables
+              clojure-enable-fancify-symbols t)
      (colors :variables
              colors-enable-rainbow-identifiers t
              colors-enable-nyan-cat-progress-bar t)
