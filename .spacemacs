@@ -47,6 +47,8 @@ values."
      react
      ruby
      rust
+     (scala :variables
+            scala-enable-eldoc t)
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -128,13 +130,13 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Consolas"
+   dotspacemacs-default-font '(;; "Consolas"
                                ;; "Inconsolata"
-                               ;; "Menlo"
+                               "Menlo"
                                ;; "Monaco"
                                ;; "Source Code Pro"
                                ;; "Ubuntu Mono"
-                               :size 15
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
