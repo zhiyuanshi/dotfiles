@@ -132,10 +132,10 @@ values."
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '(;; "Consolas"
                                ;; "Inconsolata"
-                               "Menlo"
+                               ;; "Menlo"
                                ;; "Monaco"
                                ;; "Source Code Pro"
-                               ;; "Ubuntu Mono"
+                               "Ubuntu Mono"
                                :size 14
                                :weight normal
                                :width normal
