@@ -33,7 +33,7 @@ values."
      (clojure :variables
               clojure-enable-fancify-symbols t)
      (colors :variables
-             colors-enable-rainbow-identifiers t
+             colors-enable-rainbow-identifiers nil
              colors-enable-nyan-cat-progress-bar t)
      emacs-lisp
      ess
