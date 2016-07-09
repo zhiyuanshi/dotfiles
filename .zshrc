@@ -43,9 +43,9 @@ fi
 [ -f ~/.gtkrc-2.0 ] && echo "gtk-recent-files-max-age=0" > ~/.gtkrc-2.0
 
 # Disable ThinkPad TrackPoint
-if which xinput &>/dev/null; then
-  xinput -set-prop "TPPS/2 IBM TrackPoint" "Device Enabled" 0
-fi
+# if which xinput &>/dev/null; then
+#   xinput -set-prop "TPPS/2 IBM TrackPoint" "Device Enabled" 0
+# fi
 
 # Invert behavior of Fn key on Apple keyboard
 # https://help.ubuntu.com/community/AppleKeyboard#Change_Function_Key_behavior
