@@ -10,6 +10,7 @@ end
 
 RULES = {
   ".zshrc" => "~",
+  "config.fish" => "~/.config/fish/",
   ".vimrc" => "~",
   ".spacemacs" => "~",
   # ".emacs" => "~",
