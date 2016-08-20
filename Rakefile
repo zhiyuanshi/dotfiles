@@ -9,6 +9,7 @@ def sublime_text_data_folder_path(os = :os_x)
 end
 
 RULES = {
+  ".bash_profile" => "~",
   ".zshrc" => "~",
   "config.fish" => "~/.config/fish/",
   ".vimrc" => "~",

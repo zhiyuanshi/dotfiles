@@ -119,7 +119,7 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(stekene-light
+   dotspacemacs-themes '(default
                          spacemacs-light
                          spacemacs-dark
                          solarized-light
@@ -133,11 +133,11 @@ values."
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '(;; "Consolas"
                                ;; "Inconsolata"
-                               ;; "Menlo"
+                               "Menlo"
                                ;; "Monaco"
                                ;; "Source Code Pro"
-                               "Ubuntu Mono"
-                               :size 15
+                               ;; "Ubuntu Mono"
+                               :size 13
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
